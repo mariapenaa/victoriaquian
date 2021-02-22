@@ -2,37 +2,104 @@
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+
+
+.main-app{
+  width: 100vw;
+  height:100vh;
+  background-image: url("img/bellahadid.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position:center;
+  background-position-y: top;
+  z-index:1;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+div.main-app-wrap{
+  width:100vw;
+  height:100vh;
+  background-color:rgba(17, 14, 14, 0.885);
+  z-index:2;
+  display:flex;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-items: center;
 }
 
-.App-link {
-  color: #61dafb;
+h1{
+  letter-spacing:  1.0em;;
+  font-size:3vw; /*no se si conviene ponerle vw, para hacerlo más responsive*/
+  display:flex;
+  flex-wrap: wrap;
+  z-index:3;
+  color:white;
+  font-family: 'Karla', sans-serif;
+  font-weight: 100;
+
+
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.section-1{
+
+  width: 100vw;
+  height:100vh;
+  display:block;
+  position:absolute; /*cuidado con que no haga lio*/
+  justify-content: center;
+  align-items: center;
+  background-color:red;
+}
+
+.section-2{
+  width: 100%;
+  height:100vh;
+  display:block;
+  justify-content: center;
+  align-items: center;
+  background-color:blue;
+}
+
+h2{
+  font-size:30px;
+}
+
+
+/*FLECHA PARA ABAJO*/
+.box{
+  position:absolute;
+  top:90%;
+  left:50%;
+
+  transform: translate(-50%, -50%);
+}
+
+.box span{
+  display:block;
+  width:30px;
+  height:30px;
+  border-bottom:1px solid #fff;
+  border-right:1px solid #fff;
+  transform: rotate(45deg);
+  margin: -10px;
+  animation: animate 2s infinite;
+}
+.box span:nth-child(2){
+  animation-delay: -0.2s;
+}
+.box span:nth-child(3){
+  animation-delay: -0.4s;
+}
+
+@keyframes animate {
+  0%{
+    opacity: 0;
+    transform: rotate(45deg) translate(-20px, -20px);
   }
-  to {
-    transform: rotate(360deg);
+  50%{
+    opacity: 0.7;
+  }
+  100%{
+    opacity: 0;
+    transform: rotate(45deg) translate(20px, 20px);
   }
 }
+/*FIN FLECHA PARA ABAJO*/
