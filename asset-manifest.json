@@ -1,23 +1,24 @@
 {
   "files": {
-    "main.css": "/victoriaquian4/static/css/main.8c8b27cf.chunk.css",
-    "main.js": "/victoriaquian4/static/js/main.a4746c6a.chunk.js",
-    "main.js.map": "/victoriaquian4/static/js/main.a4746c6a.chunk.js.map",
-    "runtime-main.js": "/victoriaquian4/static/js/runtime-main.209ca4e2.js",
-    "runtime-main.js.map": "/victoriaquian4/static/js/runtime-main.209ca4e2.js.map",
-    "static/js/2.56653f1d.chunk.js": "/victoriaquian4/static/js/2.56653f1d.chunk.js",
-    "static/js/2.56653f1d.chunk.js.map": "/victoriaquian4/static/js/2.56653f1d.chunk.js.map",
-    "static/js/3.f499f39f.chunk.js": "/victoriaquian4/static/js/3.f499f39f.chunk.js",
-    "static/js/3.f499f39f.chunk.js.map": "/victoriaquian4/static/js/3.f499f39f.chunk.js.map",
+    "main.css": "/victoriaquian4/static/css/main.e10c672d.chunk.css",
+    "main.js": "/victoriaquian4/static/js/main.da2b9ea5.chunk.js",
+    "main.js.map": "/victoriaquian4/static/js/main.da2b9ea5.chunk.js.map",
+    "runtime-main.js": "/victoriaquian4/static/js/runtime-main.6a75675b.js",
+    "runtime-main.js.map": "/victoriaquian4/static/js/runtime-main.6a75675b.js.map",
+    "static/js/2.2eada066.chunk.js": "/victoriaquian4/static/js/2.2eada066.chunk.js",
+    "static/js/2.2eada066.chunk.js.map": "/victoriaquian4/static/js/2.2eada066.chunk.js.map",
+    "static/js/3.8be283b6.chunk.js": "/victoriaquian4/static/js/3.8be283b6.chunk.js",
+    "static/js/3.8be283b6.chunk.js.map": "/victoriaquian4/static/js/3.8be283b6.chunk.js.map",
     "index.html": "/victoriaquian4/index.html",
-    "static/css/main.8c8b27cf.chunk.css.map": "/victoriaquian4/static/css/main.8c8b27cf.chunk.css.map",
-    "static/js/2.56653f1d.chunk.js.LICENSE.txt": "/victoriaquian4/static/js/2.56653f1d.chunk.js.LICENSE.txt",
+    "static/css/main.e10c672d.chunk.css.map": "/victoriaquian4/static/css/main.e10c672d.chunk.css.map",
+    "static/js/2.2eada066.chunk.js.LICENSE.txt": "/victoriaquian4/static/js/2.2eada066.chunk.js.LICENSE.txt",
+    "static/media/App.css": "/victoriaquian4/static/media/bellahadid.d353b559.jpg",
     "static/media/logo.6ce24c58.svg": "/victoriaquian4/static/media/logo.6ce24c58.svg"
   },
   "entrypoints": [
-    "static/js/runtime-main.209ca4e2.js",
-    "static/js/2.56653f1d.chunk.js",
-    "static/css/main.8c8b27cf.chunk.css",
-    "static/js/main.a4746c6a.chunk.js"
+    "static/js/runtime-main.6a75675b.js",
+    "static/js/2.2eada066.chunk.js",
+    "static/css/main.e10c672d.chunk.css",
+    "static/js/main.da2b9ea5.chunk.js"
   ]
 }
