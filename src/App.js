@@ -27,9 +27,6 @@ function App() {
     <NavBar />
       <h2>first section</h2>
     </div>
-    <div className="section-2">
-      <h2>second section</h2>
-    </div>
   </div>
   );
 }

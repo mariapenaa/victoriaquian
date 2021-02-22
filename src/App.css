@@ -46,21 +46,10 @@ h1{
   position:absolute; /*cuidado con que no haga lio*/
   justify-content: center;
   align-items: center;
-  background-color:red;
+  background-color:white;
 }
 
-.section-2{
-  width: 100%;
-  height:100vh;
-  display:block;
-  justify-content: center;
-  align-items: center;
-  background-color:blue;
-}
 
-h2{
-  font-size:30px;
-}
 
 
 /*FLECHA PARA ABAJO*/
