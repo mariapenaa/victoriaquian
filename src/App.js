@@ -25,7 +25,6 @@ function App() {
     </div>
     <div className="section-1">
     <NavBar />
-      <h2>first section</h2>
     </div>
   </div>
   );
