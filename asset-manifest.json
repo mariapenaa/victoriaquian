@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/victoriaquian4/static/css/main.8c8b27cf.chunk.css",
+    "main.js": "/victoriaquian4/static/js/main.a4746c6a.chunk.js",
+    "main.js.map": "/victoriaquian4/static/js/main.a4746c6a.chunk.js.map",
+    "runtime-main.js": "/victoriaquian4/static/js/runtime-main.209ca4e2.js",
+    "runtime-main.js.map": "/victoriaquian4/static/js/runtime-main.209ca4e2.js.map",
+    "static/js/2.56653f1d.chunk.js": "/victoriaquian4/static/js/2.56653f1d.chunk.js",
+    "static/js/2.56653f1d.chunk.js.map": "/victoriaquian4/static/js/2.56653f1d.chunk.js.map",
+    "static/js/3.f499f39f.chunk.js": "/victoriaquian4/static/js/3.f499f39f.chunk.js",
+    "static/js/3.f499f39f.chunk.js.map": "/victoriaquian4/static/js/3.f499f39f.chunk.js.map",
+    "index.html": "/victoriaquian4/index.html",
+    "static/css/main.8c8b27cf.chunk.css.map": "/victoriaquian4/static/css/main.8c8b27cf.chunk.css.map",
+    "static/js/2.56653f1d.chunk.js.LICENSE.txt": "/victoriaquian4/static/js/2.56653f1d.chunk.js.LICENSE.txt",
+    "static/media/logo.6ce24c58.svg": "/victoriaquian4/static/media/logo.6ce24c58.svg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.209ca4e2.js",
+    "static/js/2.56653f1d.chunk.js",
+    "static/css/main.8c8b27cf.chunk.css",
+    "static/js/main.a4746c6a.chunk.js"
+  ]
+}
