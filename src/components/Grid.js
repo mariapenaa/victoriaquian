@@ -20,7 +20,7 @@ export function PhotoGrid() {
     return (
         <div class="row">
             <div class="column">
-                <img src={img2} />
+                <img src={img2}/>
                 <img src={img7} />
                 <img src={img4} />
                 <img src={img1} />

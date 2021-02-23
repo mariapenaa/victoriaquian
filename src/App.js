@@ -1,8 +1,8 @@
 import logo from './logo.svg';
-
 import './App.css';
 import {NavBar} from './components/Nav';
 import {PhotoGrid} from './components/Grid';
+import {Footer} from './components/Footer';
 import 'bootstrap/dist/css/bootstrap.min.css';
 
 
@@ -28,6 +28,7 @@ function App() {
       <NavBar />
       <PhotoGrid />
     </div>
+      <Footer />
   </div>
   );
 }
