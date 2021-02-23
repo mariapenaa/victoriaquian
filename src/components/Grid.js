@@ -9,11 +9,11 @@ export function PhotoGrid() {
     };
 
     return (
-    <Container fluid className="main-container">
+    <Container fluid className="main-container-grid">
     <Row>
         <Col>
             <Row>
-                <Col>HEllo my name is Maria</Col>
+                <Col></Col>
                 <Col>HEY</Col>
             </Row>
             <Row>HEY</Row>

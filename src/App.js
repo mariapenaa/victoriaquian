@@ -24,7 +24,7 @@ function App() {
             </div>
           </div>
         </div>
-      <div className="main-container">
+    <div className="main-container">
       <NavBar />
       <PhotoGrid />
     </div>
