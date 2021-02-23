@@ -14,19 +14,20 @@ function App() {
 
   return (
     <div className="App">
-      
-    <div className="main-app">
-      <div className="main-app-wrap">
-        <h1>VICTORIA QUIAN</h1>
-        <div class="box" onClick={hello}>
-          <span></span>
-          <span></span>
-          <span></span>
+        <div className="main-app">
+          <div className="main-app-wrap">
+            <h1>VICTORIA QUIAN</h1>
+            <div class="box" onClick={hello}>
+              <span></span>
+              <span></span>
+              <span></span>
+            </div>
+          </div>
         </div>
-      </div>
+      <div className="main-container">
+      <NavBar />
+      <PhotoGrid />
     </div>
-    <NavBar />
-    <PhotoGrid />
   </div>
   );
 }

@@ -4,12 +4,16 @@ import ReactDOM from 'react-dom';
 import './Grid.css';
 
 export function PhotoGrid() {
+    var fv = {
+        uno:"IMG_9235",
+    };
+
     return (
     <Container fluid className="main-container">
     <Row>
         <Col>
             <Row>
-                <Col>HEY</Col>
+                <Col>HEllo my name is Maria</Col>
                 <Col>HEY</Col>
             </Row>
             <Row>HEY</Row>
