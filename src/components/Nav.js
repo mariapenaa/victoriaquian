@@ -1,6 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import './Nav.css'
+import './Nav.css';
+//import  Navbar from 'react-bootstrap/Navbar';
 
 
 export function NavBar() {
@@ -13,7 +14,6 @@ export function NavBar() {
             <li>Arte</li>
             <li>ME</li>
         </ul>
-        
     </div>
     );
 }
