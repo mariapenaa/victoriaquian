@@ -35,7 +35,7 @@ div.main-app-wrap{
 
 h1{
   letter-spacing:  1.0em;;
-  font-size:3vw; /*no se si conviene ponerle vw, para hacerlo más responsive*/
+  font-size:3vw !important; /*no se si conviene ponerle vw, para hacerlo más responsive*/
   display:flex;
   flex-wrap: wrap;
   z-index:3;
@@ -101,3 +101,10 @@ h1{
 }
 /*FIN FLECHA PARA ABAJO*/
 
+@media (max-width: 414px){
+  div.main-container{
+    display:flex;
+    flex-direction:column;
+  }
+    
+}

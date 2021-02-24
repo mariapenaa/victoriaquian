@@ -10,6 +10,16 @@
     background-color:white;
     margin:0px 0px;
 }
+.nav-h1{
+    display:none;
+    color:black;
+}
+/*boton*/
+
+.navbar-light .navbar-toggler {
+    border-color: white !important;
+    margin-top:21px;
+}
 
 .sticky{
 position: -webkit-sticky;
@@ -35,4 +45,19 @@ div.nav-bar.sticky{
 .nav-items li{
     padding:20px 50px;
     text-align: left;
+}
+
+@media (max-width: 414px){
+    .nav-bar{
+        width:auto;
+        height:auto;
+        padding-top:16px !important;
+        flex-direction: row;
+    }
+
+    .nav-h1{
+        display:block;
+        margin-top:30px !important;
+    }
+
 }
