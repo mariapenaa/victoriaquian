@@ -28,7 +28,7 @@ function App() {
       <NavBar />
       <PhotoGrid />
     </div>
-      <Footer />
+   <Footer /> 
   </div>
   );
 }

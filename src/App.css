@@ -2,11 +2,14 @@
   text-align: center;
 }
 
+
+
 div.main-container{
   padding:0px;
   margin:0px;
   display: grid;
-  grid-template-columns: min-content 1fr
+  grid-template-columns: min-content 1fr;
+  box-sizing:border-box;
 
 }
 
@@ -46,16 +49,6 @@ h1{
 
 }
 
-.section-1{
-
-  width: 100vw;
-  height:100vh;
-  display:block;
-  position:absolute; /*cuidado con que no haga lio*/
-  justify-content: center;
-  align-items: center;
-  background-color:white;
-}
 
 
 
