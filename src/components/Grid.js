@@ -2,7 +2,7 @@ import React from 'react';
 import { Col, Container, Row } from 'react-bootstrap';
 import Image from 'react-bootstrap/Image';
 import ReactDOM from 'react-dom';
-import './Grid.css';
+import './stylesheet/Grid.css';
 import img1 from '../img/bellahadid.jpg';
 import img2 from '../img/fotoauto.jpeg';
 import img3 from '../img/IMG_9235.jpg';
