@@ -3,6 +3,7 @@ import './App.css';
 import {NavBar} from './components/Nav';
 import {PhotoGrid} from './components/Grid';
 import {Footer} from './components/Footer';
+import{Coleccion} from './components/Coleccion';
 import 'bootstrap/dist/css/bootstrap.min.css';
 
 
@@ -27,6 +28,7 @@ function App() {
     <div className="main-container">
       <NavBar />
       <PhotoGrid />
+      <Coleccion/ >
     </div>
    <Footer /> 
   </div>
