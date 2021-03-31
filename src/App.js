@@ -5,6 +5,7 @@ import {PhotoGrid} from './components/Grid';
 import {Footer} from './components/Footer';
 import{Coleccion} from './components/Coleccion';
 import {Home} from './components/Home';
+import {About} from './components/About';
 
 import 'bootstrap/dist/css/bootstrap.min.css';
 
@@ -44,7 +45,7 @@ function App() {
             <NavBar />
             <Route path="/" exact component={PhotoGrid}   />
             <Route path="/coleccion/:id" exact render={(props) => <Coleccion {...props} name={`Hola`} />} />
-            <Route path="/about" exact render={(props) => <Coleccion {...props} name={`Hola`} />} />
+            <Route path="/about" exact render={(props) => <About {...props} name={`Hola`} />} />
           </div>
           <Footer /> 
         </div>
