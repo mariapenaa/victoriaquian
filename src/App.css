@@ -1,18 +1,13 @@
+
+
+
+
 .App {
-  text-align: center;
+  width:100%;
+  box-sizing: border-box;
+  background: #EBEBEB;
+  height:auto;
 }
-
-
-
-div.main-container{
-  padding:0px;
-  margin:0px;
-  display: grid;
-  grid-template-columns: min-content 1fr;
-  box-sizing:border-box;
-
-}
-
 
 
 

@@ -5,16 +5,16 @@ import './stylesheet/Footer.css';
 export function Footer() {
     return (
         <div className="footer">
-            <ul>
+            <ul className="footer-ul">
                 <li className="left-footer">
                     <ul className="media-links">
-                        <li>Ins</li>
-                        <li>Twt</li>
-                        <li>Wht</li>
+                        <li><i class="fab fa-twitter"></i></li>
+                        <li><i class="fab fa-instagram"></i></li>
+                        <li><i class="fab fa-spotify"></i> </li>
                     </ul>
-                    <li className="nombre">VictoriaQuian</li>
+                    <li className="nombre">Victoria Quian</li>
                 </li>
-                <li>Built by María Peña</li>
+                <li>Creado por María Peña</li>
             </ul>
         </div>
     );
