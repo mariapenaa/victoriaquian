@@ -6,6 +6,7 @@ import {Footer} from './components/Footer';
 import{Proyectos} from './components/Proyectos';
 import {Home} from './components/Home';
 import {About} from './components/About';
+import {Coleccion} from './components/Coleccion';
 import {HomeScroll} from './components/HomeScroll';
 import {HomeScroll2} from './components/HomeScroll2';
 
@@ -25,10 +26,10 @@ function App() {
         <div className="App">
           {/* <Route path="/" exact component={Home} /> */}
           <NavBar />
-          <Route path="/" exact component={Home} />
-          <Route path="/proyectos" exact component={Proyectos} />
-          <Route path="/about" exact component={About} />
-
+            <Route path="/" exact component={Home} />
+            <Route path="/proyectos" exact component={Proyectos} />
+            <Route path="/about" exact component={About} />
+            <Route path="/proyectos/coleccion" exact component={Coleccion} />
           <Footer />
         </div >
       </Switch>

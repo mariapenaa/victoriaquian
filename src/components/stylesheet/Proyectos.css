@@ -1,3 +1,4 @@
+
 .container{
     width:100%;
     height:100vh;
@@ -6,7 +7,8 @@
     align-items: center;
     flex-direction: column;
 }
-h1{
+
+.proyectos-h1{
     margin:50px;
     font-family: 'Karla', sans-serif;
     color:#747474;
@@ -49,11 +51,11 @@ h1{
     opacity: 0;
     transition: .5s ease;
     background-color: #000000;
-  }
+}
 
 .cuadrado:hover .middle {
-    opacity: 0.7;
-  }
+    opacity: 0.8;
+}
 
 .vertical{
 
@@ -68,7 +70,36 @@ h1{
     -ms-transform: translate(-50%, -50%) rotate(270deg);
     transform: translate(-50%, -50%) rotate(270deg);
     z-index: 4;
+}
 
+
+.coleccion-banner{
+    margin-top:50vh;
+    background-image: url(/src/img/fotoauto.jpeg);
+    width:100%;
+    background-repeat: no-repeat;
+    background-size:cover ;
+    display:flex;
+    justify-content: center;
+    z-index:1;
 
 }
 
+.coleccion-banner-grey{
+    width:100%;
+    background-color:black;
+    z-index:2;
+    display:flex;
+    justify-content: center;
+    opacity: 0.5;
+
+}
+
+.coleccion-h1{
+    color:white;
+    text-transform:uppercase ;
+    font-size:4vw;
+    padding:10px;
+    letter-spacing:0.5em;
+    z-index:3;
+}

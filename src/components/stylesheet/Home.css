@@ -20,7 +20,7 @@
   }
   
   .title{
-    letter-spacing:  1.0em;;
+    letter-spacing:  1.0em;
     font-size:3vw !important; /*no se si conviene ponerle vw, para hacerlo más responsive*/
     display:flex;
     flex-wrap: wrap;
