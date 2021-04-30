@@ -33,7 +33,7 @@ import './stylesheet/About.css';
             this.setState({ status: "Sending" });  
             axios({
                 method: "POST",
-                url: "http://localhost:5000/contact",
+                url: "http://localhost:5000/contacto",
                 data: this.state,
                 }).then((response) => {
                     if (response.data.status === "sent") {
@@ -49,33 +49,30 @@ import './stylesheet/About.css';
         render() {
 
             let buttonText = this.state.status;
-
-          
-
             
             return (      
                 <div className="container">
                     <h1>Contacto</h1>
                     <div className="form-container">
-                        <form /* onSubmit={this.handleSubmit.bind(this)} */ className="form" method="POST">
+                        <form onSubmit={this.handleSubmit} className="form" method="POST">
                             <div>
-                                <label htmlFor="name">Name:</label><br />
+                                <label htmlFor="name">Nombre:</label><br />
                                 <input
                                     type="text"
                                     id="name"
                                     value={this.state.name}
-                                    /* onChange={this.handleChange.bind(this)} */
+                                    onChange={this.handleChange}
                                     required
                                     className="input"
                                 />
                             </div>
                             <div>
-                                <label htmlFor="email">Email:</label><br />
+                                <label htmlFor="email">Mail:</label><br />
                                 <input
                                     type="email"
                                     id="email"
                                     value={this.state.email}
-                                    /* onChange={this.handleChange.bind(this)} */
+                                    onChange={this.handleChange}
                                     required
                                     className="input"
                                 />
@@ -85,7 +82,7 @@ import './stylesheet/About.css';
                                 <textarea
                                     id="message"
                                     value={this.state.message}
-                                    /* onChange={this.handleChange.bind(this)} */
+                                    onChange={this.handleChange}
                                     required
                                     className="message"
                                 />
