@@ -1,67 +1,60 @@
 
-import React, { Component } from "react";
+import React, { Component, useState } from "react";
 import axios from "axios";
 import ReactDOM from 'react-dom';
 import './stylesheet/About.css';
 
- export class ContactForm extends Component {
-    constructor() {
-        super();
-        this.state = {
-            name: "",
-            email: "",
-            message: "",
-            status: "Submit"
-        }; 
-        this.handleChange = this.handleChange.bind(this);
-        this.handleSubmit = this.handleSubmit.bind(this);
-    }
-        
-        handleChange(event) {
-            const field = event.target.id;
-            if (field === "name") {
-                this.setState({ name: event.target.value });
-            } else if (field === "email") {
-                this.setState({ email: event.target.value });
-            } else if (field === "message") {
-                this.setState({ message: event.target.value });
-            }
-        }
+export function ContactForm () {
+    const [name, setName] = useState("");
+    const [email, setEmail] = useState("");
+    const [message, setMessage] = useState("");
+    const [status, setStatus] = useState("Submit");
 
-        handleSubmit(event) {
-            event.preventDefault();  
-            this.setState({ status: "Sending" });  
+    const handleChange = (e) => {
+            const field = e.target.id;
+            if (field === "name") {
+                setName(e.target.value);
+            } else if (field === "email") {
+                setEmail(e.target.value);
+            } else if (field === "message") {
+                setMessage(e.target.value);
+            }
+        };
+
+    const handleSubmit = (e) => {
+            e.preventDefault();  
+            setStatus("Sending...");  
             axios({
                 method: "POST",
                 url: "http://localhost:5000/contacto",
-                data: this.state,
+                data:axios.state,
                 }).then((response) => {
                     if (response.data.status === "sent") {
                         alert("Message Sent");
-                        this.setState({ name: "", email: "", message: "", status: "Submit" });
+                        setName("");
+                        setEmail("");
+                        setMessage("");
+                        setStatus("Submit");
                     } else if (response.data.status === "failed") {
                         alert("Message Failed");
                     }
                     });
         }
 
+        let buttonText = status;
 
-        render() {
-
-            let buttonText = this.state.status;
-            
-            return (      
+        return(
                 <div className="container">
                     <h1>Contacto</h1>
                     <div className="form-container">
-                        <form onSubmit={this.handleSubmit} className="form" method="POST">
+                        <form onSubmit={handleSubmit} className="form" method="POST">
                             <div>
                                 <label htmlFor="name">Nombre:</label><br />
                                 <input
                                     type="text"
                                     id="name"
-                                    value={this.state.name}
-                                    onChange={this.handleChange}
+                                    value={name}
+                                    onChange={handleChange}
                                     required
                                     className="input"
                                 />
@@ -71,8 +64,8 @@ import './stylesheet/About.css';
                                 <input
                                     type="email"
                                     id="email"
-                                    value={this.state.email}
-                                    onChange={this.handleChange}
+                                    value={email}
+                                    onChange={handleChange}
                                     required
                                     className="input"
                                 />
@@ -81,8 +74,8 @@ import './stylesheet/About.css';
                                 <label htmlFor="message">Message:</label><br />
                                 <textarea
                                     id="message"
-                                    value={this.state.message}
-                                    onChange={this.handleChange}
+                                    value={message}
+                                    onChange={handleChange}
                                     required
                                     className="message"
                                 />
@@ -92,7 +85,6 @@ import './stylesheet/About.css';
                     </div>
                 </div>
             );
-        }
+        
   }
 
-  export default ContactForm;
