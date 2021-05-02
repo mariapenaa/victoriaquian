@@ -22,13 +22,13 @@ function App() {
   return (
    <Router>
       <Switch>
-        <div className="App">
+        <div className="App inverse">
           {/* <Route path="/" exact component={Home} /> */}
           <NavBar />
             <Route path="/" exact component={Home} />
             <Route path="/proyectos" exact component={Proyectos} />
             <Route path="/about" exact component={About} />
-            <Route path="/proyectos/coleccion" exact component={Coleccion} />
+            <Route path="/proyectos/:nommbreProyecto" exact component={Coleccion} />
             <Route path="/contacto" exact component={ContactForm} />
           <Footer />
         </div >

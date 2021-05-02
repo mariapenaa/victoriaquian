@@ -4,11 +4,13 @@ import axios from "axios";
 import ReactDOM from 'react-dom';
 import './stylesheet/About.css';
 
+
 export function ContactForm () {
     const [name, setName] = useState("");
     const [email, setEmail] = useState("");
     const [message, setMessage] = useState("");
     const [status, setStatus] = useState("Submit");
+
 
     const handleChange = (e) => {
             const field = e.target.id;
@@ -41,7 +43,9 @@ export function ContactForm () {
                     });
         }
 
+
         let buttonText = status;
+
 
         return(
                 <div className="container">
@@ -80,7 +84,7 @@ export function ContactForm () {
                                     className="message"
                                 />
                             </div>
-                            <button className="submit" type="submit">{buttonText}</button>
+                            <button className="submit" type="submit" >{buttonText}</button>
                         </form>      
                     </div>
                 </div>
