@@ -23,7 +23,7 @@ export function Home() {
                         </div>
                 </div>
             </div>
-            <PhotoGrid />
+           {/*  <PhotoGrid /> */}
             <HomeScroll2 />
             </div>
     );
