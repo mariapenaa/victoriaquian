@@ -6,6 +6,7 @@ import './stylesheet/Grid.css';
 
 
 
+
 export function PhotoGrid(props) {
     const {nombre, fotos} = props.coleccion;
     const arrayLength = fotos.length;
