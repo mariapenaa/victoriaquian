@@ -5,7 +5,6 @@ import {PhotoGrid} from './Grid';
 import {rutasFotos} from "../photos";
 
 
-import './stylesheet/main.css';
 import './stylesheet/Proyectos.css';
 
 

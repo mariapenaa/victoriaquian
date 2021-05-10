@@ -1,7 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './stylesheet/About.css';
-import './stylesheet/main.css';
 import './scss/app.scss';
 import fotoVicky from "../img/IMG_9239.jpg"
 

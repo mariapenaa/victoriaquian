@@ -1,8 +1,8 @@
 import React from 'react';
 import {useState, useEffect} from 'react';
 import ReactDOM from 'react-dom';
-import './stylesheet/Nav.css';
-import logo from '../img/logoVQ.png';
+import './scss/nav.scss';
+import logoNegro from '../img/fotosVi/logonegro.PNG';
 
 
 import {Link} from 'react-router-dom';
@@ -11,21 +11,21 @@ import { render } from '@testing-library/react';
 
 export function NavBar() {
     const [navbar, setNavbar] = useState(false);
+    const [color, setColor] = useState(false);
 
     const changeBackground = () =>{
-
          if(window.scrollY>=800){
             setNavbar(true);
         }else{
             setNavbar(false);
         } 
     }
-    
     window.addEventListener("scroll", changeBackground)
+
 
     return (
         <header className={navbar ? 'nav-bar active' : 'nav-bar'}>
-            <Link to="/"><img className={"logo"} src={logo} /></Link>
+            <Link to="/"><img className={"logo"} src={logoNegro} /></Link>
             <ul className={navbar ? 'nav-list active' : 'nav-list'}>
                 <li><Link to="/proyectos">Proyectos</Link></li>
                 <li><Link to="/about">Sobre mi</Link></li>

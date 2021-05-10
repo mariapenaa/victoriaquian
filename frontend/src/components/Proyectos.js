@@ -1,7 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import {PhotoGrid} from './Grid';
-import './stylesheet/main.css';
 import './stylesheet/Proyectos.css';
 import img1 from '../img/bellahadid.jpg';
 import img2 from '../img/fotoauto.jpeg';

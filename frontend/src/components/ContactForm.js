@@ -2,7 +2,7 @@
 import React, { Component, useState } from "react";
 import axios from "axios";
 import ReactDOM from 'react-dom';
-import './stylesheet/About.css';
+import './scss/contact.scss';
 
 
 export function ContactForm () {
@@ -48,46 +48,52 @@ export function ContactForm () {
 
 
         return(
-                <div className="container">
-                    <h1>Contacto</h1>
-                    <div className="form-container">
-                        <form onSubmit={handleSubmit} className="form" method="POST">
-                            <div>
-                                <label htmlFor="name">Nombre:</label><br />
-                                <input
-                                    type="text"
-                                    id="name"
-                                    value={name}
-                                    onChange={handleChange}
-                                    required
-                                    className="input"
-                                />
-                            </div>
-                            <div>
-                                <label htmlFor="email">Mail:</label><br />
-                                <input
-                                    type="email"
-                                    id="email"
-                                    value={email}
-                                    onChange={handleChange}
-                                    required
-                                    className="input"
-                                />
-                            </div>
-                            <div>
-                                <label htmlFor="message">Message:</label><br />
-                                <textarea
-                                    id="message"
-                                    value={message}
-                                    onChange={handleChange}
-                                    required
-                                    className="message"
-                                />
-                            </div>
-                            <button className="submit" type="submit" >{buttonText}</button>
-                        </form>      
+                <div className="contact">
+                        <div className="form-container">
+                            <h2>Want to talk?</h2>
+                            <p>Proyectos fotográficos, encargos de Photoshop, Illustrator, Adobe  Premier, y Adobe After Effects.</p>
+                            <h3>Email:</h3>
+                            <p>victoriaquian@gmail.com</p>
+                            <h3>Phone:</h3>
+                            <p>+54 9 11 4176-6805</p>
+                            <form onSubmit={handleSubmit} className="form" method="POST">
+                                <div>
+                                    <input
+                                        type="text"
+                                        placeholder="Name"
+                                        id="name"
+                                        value={name}
+                                        onChange={handleChange}
+                                        required
+                                        className="input"
+                                    />
+                                </div>
+                                <div>
+                                    <input
+                                        placeholder="Email"
+                                        type="email"
+                                        id="email"
+                                        value={email}
+                                        onChange={handleChange}
+                                        required
+                                        className="input"
+                                    />
+                                </div>
+                                <div>
+                                    <textarea
+                                        placeholder="Message"
+                                        id="message"
+                                        value={message}
+                                        onChange={handleChange}
+                                        required
+                                        className="message"
+                                    />
+                                </div>
+                                <button className="submit" type="submit" >{buttonText}</button>
+                            </form>      
+                        </div>
                     </div>
-                </div>
+ 
             );
         
   }

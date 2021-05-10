@@ -1,0 +1,63 @@
+@import "base";
+
+%width-height{
+    width: 100%;
+    height:100vh;
+}
+
+.main-app{
+    @extend %width-height;
+    background-image: url("/img/fotoauto.jpeg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position:center;
+    background-position-y: top;
+    z-index:1;
+}
+
+.main-app-wrap{
+    @extend %width-height;
+    background-color:rgba(90, 90, 90, 0.733);
+    z-index:2;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+
+  .title{
+    letter-spacing:  1.0em;
+    font-size:3vw !important; /*no se si conviene ponerle vw, para hacerlo más responsive*/
+    display:flex;
+    flex-wrap: wrap;
+    z-index:3;
+    color:white;
+    font-family: $karla;
+    font-weight: 100;
+ }
+
+ .subtitle{
+    font-family: $karla;
+    font-style: normal;
+    font-weight: 100;
+    font-size: 2vw;
+    line-height: 47px;
+    letter-spacing: 0.1em;
+    margin:0px;
+    color:$almost-white;
+}
+
+.main-text{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .footer{
+      display:none;
+  }
+
+a{
+    color:inherit;
+    text-decoration: inherit;
+}
