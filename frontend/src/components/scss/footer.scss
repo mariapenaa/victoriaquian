@@ -1,0 +1,43 @@
+@import "base";
+
+
+
+.footer{
+    display:flex;
+    width:100%;
+    background-color:$my-light-purple2;
+    color:$my-grey;
+    
+    ul{
+        display:flex;
+        width:100%;
+        justify-content: space-between;
+        padding:0px;
+        margin:20px 20px;
+    }
+}
+
+.left-footer{
+    display:flex;
+    flex-direction:row;
+    flex-wrap:nowrap;
+    ul.media-links{
+        display:flex;
+        flex-direction: row;
+        margin:0px;
+        padding:0px;
+        li{
+            padding: 0px 5px;
+        }
+    }
+    .nombre{
+        margin-left:20px;
+        display: inline-block;
+        white-space: nowrap;
+    }
+}
+
+
+li{
+    list-style:none;
+}

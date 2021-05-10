@@ -63,6 +63,7 @@ export const rutasFotos = [
     {
         id:0,
         nombre: "Rollo",
+        descripcion:"Colección de  fotos  sacadas con cámara de rollo.",
         fotos: [
             {
                 "id":0,
@@ -267,6 +268,7 @@ export const rutasFotos = [
     {
         id:1,
         nombre: "Collages",
+        descripcion:"Collages digitales creados con Photoshop",
         fotos: [
             {
                 "id":0,
@@ -387,6 +389,7 @@ export const rutasFotos = [
     {
         id:3,
         nombre: "Favs",
+        descripcion:"Mis fotos favoritas",
         fotos: [
             {
                 "id":0,

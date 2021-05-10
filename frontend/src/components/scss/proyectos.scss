@@ -1,0 +1,79 @@
+@import "base";
+
+.proyectos{
+    background-image: url("/img/fotosVi/collage/collage14.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position:center;
+    background-position-y: top;
+    z-index:1;
+
+}
+
+.proyectos-wrap{
+    width: 100%;
+    height:100vh;
+    background-color:rgba(38, 38, 38, 0.693);
+    z-index:2;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.proyectos-carrousel{
+    width:90%;
+    height:60vh;
+    display:flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+}
+
+
+.cuadrado{
+    width:30%;
+    height: 100%;
+    display:block;
+    position:relative;
+}
+
+.proyectos-name{
+    color:rgb(255, 255, 255);
+    font-family: 'Oxygen', sans-serif;
+    font-weight:200;
+    font-size:4vw;
+    text-transform: uppercase;
+    z-index: 10;
+    position:absolute;
+    left: 50%; 
+    transform: translateX(-50%);
+    top:30%;
+
+}
+
+
+.middle{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    transition: .5s ease;
+    background-color: #000000;
+    z-index: 1;
+    display:flex;
+    align-items: flex-end;
+    p{
+        color:white;
+    }
+}
+
+.cuadrado:hover .middle {
+    opacity: 0.5;
+}
+
+

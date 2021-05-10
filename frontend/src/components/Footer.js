@@ -1,6 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import './stylesheet/Footer.css';
+import './scss/footer.scss';
 
 export function Footer() {
     return (
