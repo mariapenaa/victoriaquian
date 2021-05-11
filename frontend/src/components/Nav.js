@@ -3,6 +3,7 @@ import {useState, useEffect} from 'react';
 import ReactDOM from 'react-dom';
 import './scss/nav.scss';
 import logoNegro from '../img/fotosVi/logonegro.PNG';
+import logoBlanco from '../img/fotosVi/logoblanco.PNG';
 
 
 import {Link} from 'react-router-dom';
@@ -23,8 +24,6 @@ export function NavBar(props) {
     }
     window.addEventListener("scroll", changeBackground) */
 
-    
-
 
     const [color,  setColor] = useState(true)
     
@@ -33,8 +32,10 @@ export function NavBar(props) {
     }
 
     return (
-        <header className={color ?  'nav-bar-white': 'nav-bar'}>
-            <Link to="/" onClick={() => changeColor(true)}><img className={"logo"} src={logoNegro} /></Link>
+       /*  <header className={color ?  'nav-bar-white': 'nav-bar'}> */
+        <header className='nav-bar'>
+     {/*        <Link to="/" onClick={() => changeColor(true)}><img className={"logo"} src={color ? logoBlanco : logoNegro} /></Link> */}
+     <Link to="/" onClick={() => changeColor(true)}><img className={"logo"} src={logoNegro} /></Link>
             <ul className='nav-list'>
                 <li><Link to="/proyectos" onClick={() => changeColor(true)}>Proyectos</Link></li>
                 <li><Link to="/about" onClick={() => changeColor(false)}>Sobre mi</Link></li>

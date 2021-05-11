@@ -3,6 +3,7 @@ import React from 'react';
 
 import ReactDOM from 'react-dom';
 import './stylesheet/Grid.css';
+import './stylesheet/Proyectos.css';
 
 
 

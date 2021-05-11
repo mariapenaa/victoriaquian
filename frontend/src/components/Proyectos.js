@@ -23,8 +23,11 @@ export function Proyectos() {
             <div className="proyectos-wrap">
                 <div className="proyectos-carrousel">
                     {proyectos.map((proyecto, index)=>(        
-                        <div className="cuadrado">
-                                <Link to={`/proyectos/${proyecto.nombre}`}>
+                        <div className="cuadrado" id={`cuadrado${proyecto.id}`}>  
+                                <Link to={{
+                                    pathname: `/proyectos/${proyecto.nombre}`,
+                                    color: false,
+                                    }}>
                                     <h2 className="proyectos-name">{proyecto.nombre}</h2>
                                 </Link>
                                 <div className="middle"><p>{proyecto.descripcion}</p></div>     
