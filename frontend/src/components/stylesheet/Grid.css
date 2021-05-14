@@ -4,22 +4,30 @@
     flex-wrap: wrap;
     box-sizing: border-box;
     width:100%;
-    padding:30px 50px;
+    padding:30px 30px;
 }
   
   /* Create four equal columns that sits next to each other */
   .column {
-    flex: 25%;
-    max-width: 25%;
-    padding: 0 15px;
+    flex: 20%;
+    max-width: 20%;
+    padding: 0 5px;
     box-sizing: border-box;
 }
   
   .column img {
-    padding: 15px 0px;
+    padding: 5px 0px;
     vertical-align: middle;
     width: 100%;
+    transition: all .3s ease-in-out; 
+    opacity:1;
 }
+
+.column img:hover{
+  opacity:0.5;
+}
+
+
   
   /* Responsive layout - makes a two column-layout instead of four columns */
   @media screen and (max-width: 800px) {

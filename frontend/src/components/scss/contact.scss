@@ -10,6 +10,9 @@
 }
 
 .form-container{
+}
+
+.form-container{
     margin-top:9vh;
     box-sizing: border-box;
     border:black;
@@ -18,9 +21,6 @@
     width:30%;
     height:67vh;
     padding:40px 37px;
-}
-
-.form-container{
     h2{
         color:$my-dark-purple;
         font-family: $karla;
@@ -34,7 +34,7 @@
         font-family: 'Oxygen', sans-serif;
         font-style: normal;
         font-weight: normal;
-        font-size: 15px;
+        font-size: 1rem;
         justify-content: baseline;
         line-height: 27px;
         margin-top:0px;
@@ -53,7 +53,7 @@
         border: solid 0.5px;
         border-color: $my-grey ;
         margin-bottom:18px;
-        height:25px;
+        height:1.6rem;
     }
 
     textarea{

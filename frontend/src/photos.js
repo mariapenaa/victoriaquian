@@ -102,6 +102,19 @@ export const rutasFotos = [
                 "img":img6
             },
             {
+                "id":15,
+                "alt":"Foto de bella hadid",
+                "fecha":"hoy",
+                "img":img16
+            },
+            {
+                "id":16,
+                "alt":"Foto de bella hadid",
+                "fecha":"hoy",
+                "img":img17
+            },
+            
+            {
                 "id":6,
                 "alt":"Foto de bella hadid",
                 "fecha":"hoy",
@@ -132,6 +145,12 @@ export const rutasFotos = [
                 "img":img11
             },
             {
+                "id":17,
+                "alt":"Foto de bella hadid",
+                "fecha":"hoy",
+                "img":img18
+            },
+            {
                 "id":11,
                 "alt":"Foto de bella hadid",
                 "fecha":"hoy",
@@ -155,24 +174,7 @@ export const rutasFotos = [
                 "fecha":"hoy",
                 "img":img2
             },
-            {
-                "id":15,
-                "alt":"Foto de bella hadid",
-                "fecha":"hoy",
-                "img":img16
-            },
-            {
-                "id":16,
-                "alt":"Foto de bella hadid",
-                "fecha":"hoy",
-                "img":img17
-            },
-            {
-                "id":17,
-                "alt":"Foto de bella hadid",
-                "fecha":"hoy",
-                "img":img18
-            },
+           
             {
                 "id":18,
                 "alt":"Foto de bella hadid",

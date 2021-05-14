@@ -8,6 +8,8 @@ import {About} from './components/About';
 import {Coleccion} from './components/Coleccion';
 import {ContactForm} from './components/ContactForm';
 
+import SimpleReactLightbox from 'simple-react-lightbox'
+
 
 
 
@@ -21,8 +23,9 @@ function App() {
  
 
   return (
-   <Router>
+    <Router>
       <Switch>
+
 
         <div className="App inverse">
           {/* <Route path="/" exact component={Home} /> */}
@@ -36,6 +39,7 @@ function App() {
 
           <Footer />
         </div >
+
       </Switch>
     </Router> 
   );

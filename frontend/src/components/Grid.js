@@ -2,8 +2,11 @@ import React from 'react';
 
 
 import ReactDOM from 'react-dom';
+
 import './stylesheet/Grid.css';
-import './stylesheet/Proyectos.css';
+import Grid from '@material-ui/core/Grid';
+import PropTypes from 'prop-types';
+import { SRLWrapper } from "simple-react-lightbox";
 
 
 
@@ -12,13 +15,13 @@ export function PhotoGrid(props) {
     const {nombre, fotos} = props.coleccion;
     const arrayLength = fotos.length;
     const fotosPerColumn = Math.floor(arrayLength/4)
-    const numCalculador = fotosPerColumn + 1
-
+    const numCalculador = fotosPerColumn + 1 
 
 
 
     return (
-        <div className="row">
+
+         <div className="row">
             <div className="column">
             {fotos.slice(0,fotosPerColumn).map((foto, index)=>(
                 <img src={foto.img} alt={foto.alt}  />   
@@ -39,6 +42,13 @@ export function PhotoGrid(props) {
                     <img src={foto.img} alt={foto.alt}/>
                 ))}
             </div>
-        </div>
+            <div className="column">
+            {fotos.slice(0,fotosPerColumn).map((foto, index)=>(
+                <img src={foto.img} alt={foto.alt}  />   
+                ))}
+            </div>
+        </div> 
+
     );
 }
+

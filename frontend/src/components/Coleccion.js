@@ -4,6 +4,7 @@ import { useParams } from 'react-router';
 import {PhotoGrid} from './Grid';
 import {rutasFotos} from "../photos";
 import {useState} from 'react';
+import {Link} from 'react-router-dom';
 
 import './scss/coleccion.scss';
 
@@ -17,21 +18,13 @@ export function Coleccion() {
     resultado = rutasFotos.filter(coleccion => coleccion.nombre == nombreColeccion)
     const imgBackground = resultado[0].fotos[5].img
 
-    const bannerStyle = {
-        backgroundImage: `url(${imgBackground})`
-    }
-    console.log(rutasFotos[0].nombre)
-
-
-
-
 
     return (
         <div className="coleccion">
             <div className="proyectos-nav">
                 <ul>
                     {rutasFotos.map((proyecto)=>(
-                        <li className={proyecto.nombre==nombreColeccion ? "current-link" : ""}>{proyecto.nombre}</li>
+                        <li className={proyecto.nombre==nombreColeccion ? "current-link" : ""}><Link to={`/proyectos/${proyecto.nombre}`}>{proyecto.nombre}</Link></li>
                     ))}
                 </ul>
             </div>
@@ -41,5 +34,4 @@ export function Coleccion() {
 }
 
 export default Coleccion;
-
 
